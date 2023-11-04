@@ -47,7 +47,7 @@ const RegistrationPage = () => {
           navigation("/login");
         } else if (res.status == 201) {
           <ToastContainer />;
-          toast.warning(res.data.error, {
+          toast.warning(res.data.message, {
             position: toast.POSITION.TOP_RIGHT,
           });
         }

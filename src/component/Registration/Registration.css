@@ -1,0 +1,25 @@
+.registrationpage{
+    max-width: 450px;
+    border-radius: 20px;
+    margin: auto;
+    background-color:rgb(145 69 69 / 80%);
+    box-sizing: border-box;
+    box-shadow: -10px -6px 11px 0px rgb(132, 194, 248);
+    padding: 40px;
+    margin-top: 100px;
+  
+}
+h2{
+    text-align: center;
+}
+.main{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+@media only screen and (max-width: 767px){
+    .registrationpage{
+        width:280px;
+    }
+}

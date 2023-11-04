@@ -34,7 +34,10 @@ const RegistrationPage = () => {
   // Creat-Regisreation
   const postcall = async (values) => {
     await axios
-      .post("http://localhost:4000/api/registration/create", values)
+      .post(
+        "https://rxwebsitebackend.onrender.com/api/registration/create",
+        values
+      )
       .then((res) => {
         if (res.status == 200) {
           <ToastContainer />;

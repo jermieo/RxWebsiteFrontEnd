@@ -36,7 +36,10 @@ const EmailLink = () => {
     };
     try {
       await axios
-        .post("http://localhost:4000/api/registration/reset/password", headers)
+        .post(
+          "https://rxwebsitebackend.onrender.com/api/registration/reset/password",
+          headers
+        )
         .then((res) => {
           if (res.status == 200) {
             <ToastContainer />;

@@ -40,7 +40,10 @@ const LoginPage = () => {
   // Login user
   const postcall = async (values) => {
     await axios
-      .post("http://localhost:4000/api/registration/login", values)
+      .post(
+        "https://rxwebsitebackend.onrender.com/api/registration/login",
+        values
+      )
       .then((res) => {
         console.log(res);
         if (res.status == 200) {

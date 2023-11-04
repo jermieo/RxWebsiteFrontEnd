@@ -33,7 +33,10 @@ const ResetPasswordPage = () => {
   // PostCall update data
   const postcall = async (values) => {
     await axios
-      .put("http://localhost:4000/api/registration/update", values)
+      .put(
+        "https://rxwebsitebackend.onrender.com/api/registration/update",
+        values
+      )
       .then((res) => {
         console.log(res);
         if (res.status == 200) {

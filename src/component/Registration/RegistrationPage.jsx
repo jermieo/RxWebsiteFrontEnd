@@ -161,6 +161,7 @@ const RegistrationPage = () => {
               onBlur={handleBlur}
               onChange={handleChange}
               value={values.password}
+              type="password"
             />
           </InputGroup>
           {errors.password && <b style={{ color: "red" }}>{errors.password}</b>}
@@ -175,6 +176,7 @@ const RegistrationPage = () => {
               onBlur={handleBlur}
               onChange={handleChange}
               value={values.confirmpassword}
+              type="password"
             />
           </InputGroup>
           {errors.confirmpassword && (

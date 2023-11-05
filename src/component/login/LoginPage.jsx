@@ -113,6 +113,7 @@ const LoginPage = () => {
                   onBlur={handleBlur}
                   onChange={handleChange}
                   value={values.password}
+                  type="password"
                 />
               </InputGroup>
               {errors.password && (

@@ -8,6 +8,9 @@ import RegistrationPage from "./component/Registration/RegistrationPage";
 import User from "./component/UserPage/User";
 import ResetPasswordPage from "./component/ResetPassword/ResetPasswordPage";
 import EmailLink from "./component/EmailResetlink/EmailLink";
+import Products from "./component/UserPage/UserComponent/Products";
+import Home from "./component/UserPage/Home";
+import Setting from "./component/UserPage/UserComponent/Setting";
 
 function App() {
   return (
@@ -17,7 +20,11 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegistrationPage />} />
         <Route path="/emaillink" element={<EmailLink />} />
-        <Route path="/user" element={<User />} />
+        <Route path="/user" element={<User />}>
+          <Route path="dashboard" element={<Home />} />
+          <Route path="products" element={<Products />} />
+          <Route path="settings" element={<Setting />} />
+        </Route>
         <Route path="/resetpwpage" element={<ResetPasswordPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>

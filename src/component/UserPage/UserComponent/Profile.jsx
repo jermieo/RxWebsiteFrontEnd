@@ -22,7 +22,11 @@ const Profile = () => {
     };
     try {
       await axios
-        .post("http://localhost:4000/api/registration/get/Profiledata", headers)
+        // .post("http://localhost:4000/api/registration/get/Profiledata", headers)
+        .post(
+          "https://rxwebsitebackend.onrender.com/api/registration/get/Profiledata",
+          headers
+        )
         .then((res) => {
           console.log(res, "res");
           if (res.status == 200) {

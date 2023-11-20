@@ -38,7 +38,7 @@ const Sidebar = ({ openSidebarToggle, OpenSidebar }) => {
             Products
           </Link>
         </li>
-        <li className="sidebar-list-item">
+        {/* <li className="sidebar-list-item">
           <Link href="http://">
             <BsFillGrid3X3GapFill className="icon" /> Categories
           </Link>
@@ -57,7 +57,7 @@ const Sidebar = ({ openSidebarToggle, OpenSidebar }) => {
           <Link href="http://">
             <BsMenuButtonWideFill className="icon" /> Reports
           </Link>
-        </li>
+        </li> */}
         <li className="sidebar-list-item">
           <Link to="/user/settings">
             <BsFillGearFill className="icon" /> Setting

@@ -11,6 +11,7 @@ import EmailLink from "./component/EmailResetlink/EmailLink";
 import Products from "./component/UserPage/UserComponent/Products";
 import Home from "./component/UserPage/Home";
 import Setting from "./component/UserPage/UserComponent/Setting";
+import Profile from "./component/UserPage/UserComponent/Profile";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="dashboard" element={<Home />} />
           <Route path="products" element={<Products />} />
           <Route path="settings" element={<Setting />} />
+          <Route path="profile" element={<Profile />} />
         </Route>
         <Route path="/resetpwpage" element={<ResetPasswordPage />} />
         <Route path="*" element={<ErrorPage />} />

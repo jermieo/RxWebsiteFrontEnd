@@ -67,11 +67,11 @@ const Profile = () => {
     };
     try {
       await axios
-        .post("http://localhost:4000/api/registration/get/Profiledata", headers)
-        // .post(
-        //   "https://rxwebsitebackend.onrender.com/api/registration/get/Profiledata",
-        //   headers
-        // )
+        // .post("http://localhost:4000/api/registration/get/Profiledata", headers)
+        .post(
+          "https://rxwebsitebackend.onrender.com/api/registration/get/Profiledata",
+          headers
+        )
         .then((res) => {
           if (res.status == 200) {
             setData(res.data.userdetails);
@@ -99,7 +99,10 @@ const Profile = () => {
     };
     try {
       await axios
-        .put("http://localhost:4000/api/registration/update/profile", headers)
+        .put(
+          "https://rxwebsitebackend.onrender.com/api/registration/update/profile",
+          headers
+        )
         .then((res) => {
           if (res.status == 200) {
             <ToastContainer />;

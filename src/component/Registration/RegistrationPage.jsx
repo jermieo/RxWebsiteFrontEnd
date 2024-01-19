@@ -109,33 +109,6 @@ const RegistrationPage = () => {
             />
           </InputGroup>
           {errors.lastname && <b style={{ color: "red" }}>{errors.lastname}</b>}
-          {/*  Gender*/}
-          {/* <div className="d-flex justify-content-around">
-            <input
-              type="radio"
-              name="gender"
-              onBlur={handleBlur}
-              onChange={handleChange}
-              value={values.gender}
-            />
-            Male
-            <input
-              type="radio"
-              name="gender"
-              onBlur={handleBlur}
-              onChange={handleChange}
-              value={values.gender}
-            />
-            Female
-            <input
-              type="radio"
-              name="gender"
-              onBlur={handleBlur}
-              onChange={handleChange}
-              value={values.gender}
-            />
-            Others
-          </div> */}
           {/* Gmail */}
           <InputGroup className="mb-3">
             <InputGroup.Text id="basic-addon1">

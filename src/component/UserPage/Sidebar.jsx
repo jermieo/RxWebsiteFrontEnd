@@ -33,34 +33,28 @@ const Sidebar = ({ openSidebarToggle, OpenSidebar }) => {
           </Link>
         </li>
         <li className="sidebar-list-item">
-          <Link to="/user/products">
+          <Link to="/user/PettyCash">
             <BsFillArchiveFill className="icon" />
-            Products
-          </Link>
-        </li>
-        {/* <li className="sidebar-list-item">
-          <Link href="http://">
-            <BsFillGrid3X3GapFill className="icon" /> Categories
+            PettyCash
           </Link>
         </li>
         <li className="sidebar-list-item">
-          <Link href="http://">
-            <BsPeopleFill className="icon" /> Customers
-          </Link>
-        </li>
-        <li className="sidebar-list-item">
-          <Link href="http://">
-            <BsListCheck className="icon" /> Inventory
-          </Link>
-        </li>
-        <li className="sidebar-list-item">
-          <Link href="http://">
-            <BsMenuButtonWideFill className="icon" /> Reports
-          </Link>
-        </li> */}
-        <li className="sidebar-list-item">
-          <Link to="/user/settings">
-            <BsFillGearFill className="icon" /> Setting
+          <Link>
+            <BsFillGearFill className="icon" /> Expense
+            <ul>
+              <li className="sidebar-list-item">
+                <Link to="/user/expensive/create">
+                  <BsMenuButtonWideFill className="icon" />
+                  Create
+                </Link>
+              </li>
+              <li className="sidebar-list-item">
+                <Link to="/user/expensive/view">
+                  <BsPeopleFill className="icon" />
+                  View
+                </Link>
+              </li>
+            </ul>
           </Link>
         </li>
       </ul>

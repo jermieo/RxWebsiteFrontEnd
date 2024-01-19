@@ -49,7 +49,10 @@ const CreateEx = () => {
   // Post Call
   const postcall = async (values) => {
     await axios
-      .post("http://localhost:4000/api/registration/create/expense", values)
+      .post(
+        "https://rxwebsitebackend.onrender.com/api/registration/create/expense",
+        values
+      )
       .then((res) => {
         if (res.status == 200) {
           <ToastContainer />;

@@ -48,7 +48,7 @@ const ViewEx = () => {
   // GET Expense Data
   const Getcall = async () => {
     await axios
-      .get("http://localhost:4000/api/registration/get/expense")
+      .get("https://rxwebsitebackend.onrender.com/api/registration/get/expense")
       .then((res) => {
         if (res.status == 200) {
           // <ToastContainer />;

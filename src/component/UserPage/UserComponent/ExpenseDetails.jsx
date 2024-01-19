@@ -51,7 +51,9 @@ const ExpenseDetails = () => {
   ];
   const Getcall = async () => {
     await axios
-      .get(`http://localhost:4000/api/registration/get/expensedate/${date}`)
+      .get(
+        `https://rxwebsitebackend.onrender.com/api/registration/get/expensedate/${date}`
+      )
       .then((res) => {
         if (res.status == 200) {
           // <ToastContainer />;
@@ -77,7 +79,9 @@ const ExpenseDetails = () => {
   // Delete Call
   const handleDelete = async (id) => {
     await axios
-      .delete(`http://localhost:4000/api/registration/expense/delete/${id}`)
+      .delete(
+        `https://rxwebsitebackend.onrender.com/api/registration/expense/delete/${id}`
+      )
       .then((res) => {
         console.log(res, "res");
         if (res.status == 200) {

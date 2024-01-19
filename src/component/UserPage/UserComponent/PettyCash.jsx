@@ -91,7 +91,10 @@ const PettyCash = () => {
       totalamt: parseInt(newTransaction.amount),
     };
     await axios
-      .put("http://localhost:4000/api/registration/pettycash/update", data)
+      .put(
+        "https://rxwebsitebackend.onrender.com/api/registration/pettycash/update",
+        data
+      )
       .then((res) => {
         if (res.status == 200) {
           Getcall();
@@ -116,7 +119,9 @@ const PettyCash = () => {
   // Delete Call
   const handleDelete = async (id) => {
     await axios
-      .delete(`http://localhost:4000/api/registration/pettycash/delete/${id}`)
+      .delete(
+        `https://rxwebsitebackend.onrender.com/api/registration/pettycash/delete/${id}`
+      )
       .then((res) => {
         if (res.status == 200) {
           Getcall();
@@ -141,7 +146,10 @@ const PettyCash = () => {
   // Post Call
   const postcall = async (values) => {
     await axios
-      .post("http://localhost:4000/api/registration/create/pettycash", values)
+      .post(
+        "https://rxwebsitebackend.onrender.com/api/registration/create/pettycash",
+        values
+      )
       .then((res) => {
         if (res.status == 200) {
           Getcall();
@@ -198,7 +206,9 @@ const PettyCash = () => {
   // Getcall Api;
   const Getcall = async () => {
     await axios
-      .get("http://localhost:4000/api/registration/get/pettycash")
+      .get(
+        "https://rxwebsitebackend.onrender.com/api/registration/get/pettycash"
+      )
       .then((res) => {
         if (res.status == 200) {
           // <ToastContainer />;

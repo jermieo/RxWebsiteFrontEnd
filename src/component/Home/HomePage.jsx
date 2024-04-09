@@ -25,17 +25,13 @@ const HomePage = () => {
         </nav>
         <div className="div2">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-            debitis excepturi quos est, dolore ipsum repellat delectus ipsam?
-            Quaerat, ipsum? Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Cumque debitis excepturi quos est, dolore ipsum repellat
-            delectus ipsam? Quaerat, ipsum?Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Cumque debitis excepturi quos est,
-            dolore ipsum repellat delectus ipsam? Quaerat, ipsum? Cumque debitis
-            excepturi quos est, dolore ipsum repellat delectus ipsam? Quaerat,
-            ipsum? ipsum repellat delectus ipsam? Quaerat, ipsum? Cumque debitis
-            excepturi quos est, dolore ipsum repellat delectus ipsam? Quaerat,
-            ipsum?
+            Hello, I'm JermieoRex, a dedicated professional with a Bachelor's
+            degree in BCom(Computer Application) from St.Joseph's College and a
+            Master's in Computer Applications (MCA). I am deeply passionate
+            about coding and have honed my skills to become a proficient
+            full-stack developer. Proficient in languages such as HTML, CSS,
+            JavaScript and experienced with frameworks like React.js, Node.js, I
+            thrive in both front-end and back-end development.
           </p>
         </div>
       </div>

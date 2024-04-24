@@ -18,9 +18,9 @@ const HomePage = () => {
             <li>
               <NavLink to="/register">Registration</NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink to="">about</NavLink>
-            </li>
+            </li> */}
           </ul>
         </nav>
         <div className="div2">
